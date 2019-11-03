@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int i,j,m,n;
+    printf("donnez moi le nomber de lignes\n");
+    scanf("%d",&n);
+    printf("donnez moi le nomber de colones\n");
+    scanf("%d",&m);
+    int t[n][m];
+          for(i=0;i<n;i++){
+            for(j=0;j<m;j++){
+                printf("\nt[%d][%d]=",i+1,j+1);
+                scanf("%d",&t[i][j]);
+            }
+          }
+          for(i=0;i<n;i++){
+                printf("\n");
+            for(j=0;j<m;j++){
+
+               printf("%d",t[i][j]);
+            }
+          }
+          printf("Transposition d'une matrice\n");
+            for(j=0;j<m;j++){
+                printf("\n");
+            for(i=0;i<n;i++){
+
+               printf("%d",t[i][j]);
+            }
+          }
+
+    return 0;
+}
