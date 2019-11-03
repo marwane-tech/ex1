@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a=0,n,som=0,i;
+
+    printf("donnez moi la dimontion de votre tableau :\n");
+    scanf("%d",&n);
+    int t[n];
+
+    for(i=0;i<n;i++){
+
+        printf("donnez moi la valeur %d\n",i+1);
+        scanf("%d",&t[i]);
+        som=som+t[i];
+
+    }
+
+    printf("la somme des notes est :%d\n",som);
+
+     for(i=0;i<n;i++)
+            if(t[i]>0)
+            printf("le positiv valeur est:%d\n",t[i]);
+                     for(i=0;i<n;i++)
+                     if(t[i]<0)
+                    printf("le nigative valeur est:%d\n",t[i]);
+
+
+
+
+    return 0;
+}
